@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopenagl_site=self.webpackChunkopenagl_site||[]).push([[9],{65149:function(f,n,e){e.r(n),e.d(n,{default:function(){return s}});var a=e(49511),o=e(87363),r=function(){var u=(0,a.UO)(),d=u.id,m=(0,a.WF)(),l=m.demos,c=l[d]||{},t=c.component;return t&&(0,o.createElement)(t)},s=r}}]);
