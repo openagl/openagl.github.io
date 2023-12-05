@@ -1,0 +1,47 @@
+{
+  "name": "openagl-site",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Official website of OpenAGL",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "dumi dev",
+    "build": "dumi build",
+    "prepare": "husky install && dumi setup"
+  },
+  "authors": [
+    "Aaron <yangtao.yangtao@antgroup.com>"
+  ],
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ]
+  },
+  "dependencies": {
+    "antd": "^5.11.5",
+    "dumi": "^2.2.14",
+    "lodash": "^4.17.21",
+    "react-device-detect": "^2.2.3",
+    "styled-components": "^6.1.0"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^5.2.5",
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.8.8",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "typescript": "^5.1.6"
+  },
+  "repository": "git@github.com:openagl/openagl.github.io.git"
+}
