@@ -35,7 +35,11 @@ const TopContent = styled(ContentPadding)`
 const BottomContent = styled(ContentPadding)`
   background: url('https://mdn.alipayobjects.com/huamei_xgb3qj/afts/img/A*xVhwR6ie-YIAAAAAAAAAAAAADtmcAQ/original')
     no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+
+  @media (max-width: 900px) {
+    background-size: cover;
+  }
 `;
 
 const HomePage = React.memo(() => {

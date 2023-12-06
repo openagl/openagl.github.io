@@ -1,5 +1,5 @@
 /**
- * title: Semantic-enhanced Programmable Graph
+ * title: All-Scale Graph Learning
  */
 
 import MainPage from './index';

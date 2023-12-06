@@ -6,11 +6,11 @@ export const BaseConfig = {
   metas: [
     {
       name: 'keywords',
-      content: 'AGL, All-scale Graph Learning, 大规模图学习系统',
+      content: 'AGL, All-Scale Graph Learning, 大规模图学习系统',
     },
     {
       name: 'description',
-      content: 'AGL（All-scale Graph Learning）大规模图学习系统',
+      content: 'AGL（All-Scale Graph Learning）大规模图学习系统',
     },
   ],
   footer: '© 版权所有 2022 Ant Group Co., Ltd. 京ICP备15032932号-38',
@@ -22,12 +22,12 @@ export default {
   // 标题
   PRIMARY_TITLE: {
     zh: '大规模图学习系统',
-    en: 'All-scale Graph Learning',
+    en: 'All-Scale Graph Learning',
   },
   // 描述
   PRIMARY_DESCRIPTION: {
-    zh: 'All-scale Graph Learning',
-    en: 'All-scale Graph Learning',
+    zh: 'All-Scale Graph Learning',
+    en: 'All-Scale Graph Learning',
   },
   // GITHUB
   GITHUB: 'GitHub',
@@ -271,7 +271,7 @@ export default {
   ],
   OR_CODE_CONFIG_TITLE: {
     zh: '蚂蚁图学习',
-    en: 'Ant graph learning',
+    en: 'Ant Graph Learning',
   },
   OR_CODE_CONFIG_URL:
     'https://mdn.alipayobjects.com/huamei_xgb3qj/afts/img/A*Q_HdTayGBzIAAAAAAAAAAAAADtmcAQ/original',

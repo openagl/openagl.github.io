@@ -1,5 +1,5 @@
 /**
- * title: 语义增强可编程知识图谱
+ * title: 大规模图学习系统
  */
 import HomePage from '../components/HomePage';
 

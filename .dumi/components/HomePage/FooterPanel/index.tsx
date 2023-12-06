@@ -95,13 +95,6 @@ const FooterPanel = React.memo(() => {
     Messages: { ABOUT_US_CONFIG, OR_CODE_CONFIG_TITLE, OR_CODE_CONFIG_URL },
   } = useIntl();
 
-  const handleOpenLink = (linkUrl?: string) => {
-    if (!linkUrl) return;
-    window.open(linkUrl, '_blank', 'noopener=yes,noreferrer=yes');
-  };
-
-  console.log(ABOUT_US_CONFIG);
-
   return (
     <Container>
       {/* 关于我们 */}
