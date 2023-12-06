@@ -34,7 +34,7 @@ export default {
   // GITHUB URL
   GITHUB_URL: 'https://github.com/TuGraph-family/TuGraph-AntGraphLearning',
   // 帮助文档链接
-  HELP_URL: '',
+  HELP_URL: 'https://github.com/TuGraph-family/TuGraph-AntGraphLearning/blob/main/README_CN.md',
   // 帮助文档
   HELP_DOCUMENT: { zh: '帮助文档', en: 'Document' },
   // 公告信息
