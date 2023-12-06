@@ -34,6 +34,9 @@ const Content = styled.div`
   max-width: 1200px;
   display: flex;
   align-items: center;
+  align-self: center;
+  width: 100%;
+  justify-content: space-around;
 
   @media (max-width: 900px), (max-width: 480px) {
     justify-content: space-between;
@@ -43,18 +46,6 @@ const Content = styled.div`
     flex-direction: column;
     gap: 20px;
     align-items: start;
-  }
-`;
-const Details = styled.div`
-  flex: 1;
-  display: flex;
-  gap: 10px;
-  justify-content: space-evenly;
-
-  @media (max-width: 480px) {
-    gap: 20px;
-    flex-direction: column;
-    justify-content: start;
   }
 `;
 
@@ -99,30 +90,28 @@ const FooterPanel = React.memo(() => {
     <Container>
       {/* 关于我们 */}
       <Content>
-        <Details>
-          {ABOUT_US_CONFIG.map(
-            (item) =>
-              !item.hidden && (
-                <ContentItem key={item.title}>
-                  <span>{item.title}</span>
-                  <a
-                    onClick={() =>
-                      window.open(
-                        item?.linkUrl,
-                        '_blank',
-                        'noopener=yes,noreferrer=yes',
-                      )
-                    }
-                  >
-                    <Flex gap={4} align="center">
-                      <img src={item.imgUrl} />
-                      <span>{item?.description}</span>
-                    </Flex>
-                  </a>
-                </ContentItem>
-              ),
-          )}
-        </Details>
+        {ABOUT_US_CONFIG.map(
+          (item) =>
+            !item.hidden && (
+              <ContentItem key={item.title}>
+                <span>{item.title}</span>
+                <a
+                  onClick={() =>
+                    window.open(
+                      item?.linkUrl,
+                      '_blank',
+                      'noopener=yes,noreferrer=yes',
+                    )
+                  }
+                >
+                  <Flex gap={4} align="center">
+                    <img src={item.imgUrl} />
+                    <span>{item?.description}</span>
+                  </Flex>
+                </a>
+              </ContentItem>
+            ),
+        )}
         <QRCode title={OR_CODE_CONFIG_TITLE} imgUrl={OR_CODE_CONFIG_URL} />
       </Content>
     </Container>

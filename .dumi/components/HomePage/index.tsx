@@ -28,8 +28,12 @@ const ContentPadding = styled.div`
 const TopContent = styled(ContentPadding)`
   background: url('https://mdn.alipayobjects.com/huamei_xgb3qj/afts/img/A*ZWMARpRH9yIAAAAAAAAAAAAADtmcAQ/original')
     no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-size: 100% 100%;
+
+  @media (max-width: 900px) {
+    background-size: cover;
+    background-position: bottom;
+  }
 `;
 
 const BottomContent = styled(ContentPadding)`
@@ -39,6 +43,7 @@ const BottomContent = styled(ContentPadding)`
 
   @media (max-width: 900px) {
     background-size: cover;
+    background-position: bottom;
   }
 `;
 
